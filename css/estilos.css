@@ -27,10 +27,63 @@ body {
   line-height: 24px;
   
 }
-header {
-  padding: 50px 15px;
-  text-align: center;
-}
+
+
+
+
+
+.fullscreen-bg {
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  
+  
+  position:relative;
+  height:100vh;
+  }
+  
+  .fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+  height: 300%;
+  top: -100%;
+  }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+  width: 300%;
+  left: -100%;
+  }
+  }
+  header {
+  position: absolute;
+  width: 100%;
+  height: auto;
+   background-color: rgb(0, 0, 0);
+  opacity: .8;
+  }
+  
+
+
+
+
+
+
+
+
+
 .logo {
   display: flex;
   justify-content: center;
@@ -49,6 +102,8 @@ header {
 nav {
   border-top: 5px #ccc solid;
   border: 1px red solid;
+  
+  background-color: rgb(255, 255, 255);
   
 }
 nav ul {
@@ -79,12 +134,14 @@ nav ul a:hover {
 }
 
 .slide_foto {
+  
   background-image: url(../img/foto_slide.jpg) ;
   border: 1px red solid;
   height: 100%;
   background-position: center center;
 
   background-size: cover ;
+  display: none;
   
 }
 .slide_foto1{
@@ -220,41 +277,46 @@ h1 {
  
   box-shadow: 5px 10px 18px #888888;
 }
-.img-equipo1{
-  background-image: url(../img/constr-y-rem.png);
+.img-dimension{
   background-size: cover;
   max-height: 360px;
   /* width: 443px;
   height: 443px; */
+}
+.img-equipo1{
+  background-image: url(../img/constr-y-rem.png);
+ 
 
 }
 .img-equipo2{
   background-image: url(../img/DiseñoArquitectonico.png);
-  background-size: cover;
-  max-height: 360px;
-  /* width: 443px;
-  height: 443px; 
-  max-width: 100%;*/
-
-  
   
 }
 .img-equipo3{
   background-image: url(../img/Urbanización.png);
-  background-size: cover;
-  max-height: 360px;
-  /* width: 443px;
-  height: 443px; 
-  max-width: 100%;*/
+
 }
 .img-equipo4{
   background-image: url(../img/Mantenimiento.png);
-  background-size: cover;
-  max-height: 360px;
-  /* width: 443px;
-  height: 443px; 
-  max-width: 100%;*/
+
 }
+.img-equipo5{
+  background-image: url(../img/tramites.png);
+
+}
+.img-equipo6{
+  background-image: url(../img/Renta.jpeg);
+
+}
+.img-equipo7{
+  background-image: url(../img/Mantenimiento.png);
+
+}
+.img-equipo8{
+  background-image: url(../img/Mantenimiento.png);
+
+}
+
 .equipo-nombres , .equipo-nombres p {
   text-align: start;
   margin: 8px;
