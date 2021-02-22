@@ -27,11 +27,24 @@
     <source src="video/VIDEO_LOGAR.mp4" type="video/mp4">
     </video>
     </div>
-
+ 
   <figure class="slide_foto" >
     <h1>Constructores Logar</h1>
   </figure>
- <p>hola</p>
+  <div  onclick="topFunction()" id="myBtn1">
+    <div class="icon-bar">
+      <a href="https://www.facebook.com/constructoreslogar" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="https://www.google.com" class="google"><i class="fa fa-google"></i></a> 
+      <a href="https://www.youtube.com" class="youtube"><i class="fa fa-youtube"></i></a> 
+    </div>
+  </div>
+  
+  <div onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-arrow-circle-up"></i>
+  </div> 
+
+
  <div class="centrado">
   <h2>Nuestros Servicios</h2>
 </div> 
@@ -141,6 +154,34 @@
  
 </div>
 <br><br><br><br><br><br>
-  
+
+<footer>
+
+</footer>
+  <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+var mybutton1 = document.getElementById("myBtn1");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    mybutton.style.display = "block";
+    mybutton1.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+    mybutton1.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
 </body>
 </html>
