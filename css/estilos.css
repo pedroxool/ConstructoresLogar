@@ -258,7 +258,7 @@ h1 {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: var(--azulclaro);
+  background-color: blue;
   color: white;
   display: flex;
   justify-content: center;
