@@ -321,7 +321,7 @@ h1 {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 .article-equipo{
   max-width: 280px ;
@@ -399,6 +399,10 @@ h1 {
   
 }
 /* INICIA APARATADO DE NUESTROS SOCIOS  */
+.centrado h2{
+  color: orange;
+  font-size: 35px;
+}
 
 .article-socios{
   max-width: 230px;
@@ -427,11 +431,12 @@ h1 {
   align-content: center;
   /* justify-content: space-between; */
   justify-content: space-around;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 .img-dimension-socios{
   background-size: cover;
-  max-height: 130px;
+  /* height: 120px;*/
+  /* max-width: 220px;  */
   /* width: 443px;
   height: 443px; */
   
@@ -467,12 +472,20 @@ h1 {
   background-image: url(../img/Lodemo.png);
 }
 .img-socios11{
-  background-image: url(../img/apymsa.png);
+  background-image: url(../img/alamo.png);
 }
 .img-socios12{
   background-image: url(../img/bachoco.png);
 }
-
+.img-socios13{
+  background-image: url(../img/DMT.png);
+}
+.img-socios14{
+  background-image: url(../img/corona.png);
+}
+.img-socios15{
+  background-image: url(../img/apymsa.png);
+}
 .redes {
   width: 280px;
   display: flex;
