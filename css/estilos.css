@@ -174,7 +174,7 @@ p {
 .letter {
   display: inline-block;
   position: relative;
-  float: left;
+  /* float: left; */
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
 }
@@ -320,8 +320,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-
-  justify-content: space-between;
+  justify-content: space-around;
+  border: 1px red solid;
 }
 .article-equipo{
   max-width: 280px ;
@@ -329,6 +329,7 @@ h1 {
   position: relative;
   transition: all 0.5s;
   width: 100%;
+  margin-top: 10px;
 }
 
 .article-equipo figure{
@@ -400,11 +401,12 @@ h1 {
 /* INICIA APARATADO DE NUESTROS SOCIOS  */
 
 .article-socios{
-  max-width: 230px ;
+  max-width: 230px;
    /* border: 1px green solid;  */
   position: relative;
   transition: all 0.5s;
   width: 100%;
+  margin-top: 10px;
 }
 
 .article-socios figure{
@@ -423,7 +425,9 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  border: 1px red solid;
 }
 .img-dimension-socios{
   background-size: cover;
